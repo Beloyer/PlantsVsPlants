@@ -5,17 +5,15 @@ package com.isartdigital.plantvsplant.game.plants
 	 * ...
 	 * @author Allan
 	 */
-	public class MushroomShoots extends Mushroom
+	public class MushroomShoots extends MovieClip
 	{
 		
 		public function MushroomShoots() 
 		{
 			super();
-			life = 1;
-			speed = 5;
 		}
 		
-		override public function move():void 
+		public function move():void 
 		{
 			x += speed;
 		}

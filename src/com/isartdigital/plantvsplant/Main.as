@@ -26,6 +26,7 @@ package com.isartdigital.plantvsplant
 			mushmush.y = stage.stageHeight / 2;
 			addChild(mushmush);
 			addEventListener(Event.ENTER_FRAME, gameloop);
+			trace (stage.stageWidth / 2);
 		}
 		
 		public function gameloop(pEvent:Event):void
@@ -56,7 +57,6 @@ package com.isartdigital.plantvsplant
 						fertileground.x = offsetGroundX + stage.stageWidth / 8;
 						fertileground.y = offsetGroundY + stage.stageHeight / 4;
 						offsetGroundX += GROUND_WIDTH;
-						
 					}
 					
 					else
@@ -71,7 +71,6 @@ package com.isartdigital.plantvsplant
 						ground.y = offsetGroundY + stage.stageHeight / 4;
 						offsetGroundX += GROUND_WIDTH;
 					}
-					
 				}
 				offsetGroundX = GROUND_WIDTH / 2;
 				offsetGroundY += GROUND_HEIGHT * 2;
